@@ -1,0 +1,29 @@
+# Compiled class file
+#*.class
+out/production/FirstApp/ua/hillel/*.*
+out/production/FirstApp/ua/hillel/UiUtils/*.*
+out/production/FirstApp/META-INF/*.*
+
+# Package Files #
+#out/artifacts/FirstApp_jar/*.*
+
+#.idea/
+.idea/*.xml
+.idea/artifacts/*.*
+
+#src/
+src/META-INF/*.*
+
+#
+*.iml
+
+# Log file
+*.log
+
+# Package Files #
+#*.jar
+#*.war
+#*.ear
+#*.zip
+#*.tar.gz
+#.rar
