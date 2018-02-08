@@ -1,52 +1,35 @@
 package ua.hillel;
 
-import java.util.Scanner;
-
 import static java.lang.System.out;
+import java.util.Scanner;
 
 public class Program06 {
 
-    public static void Factorial(){
+    public static void Factorial() {
+        long n;
+        do
+        {
+            Scanner scan = new Scanner(System.in);
+            out.println((char) 27 + "[34mВведите натуральноe число для вычисления факториала в диапазоне от 1 до 65: " + (char)27 + "[0m");
+            n = scan.nextInt();
+            if(n < 0)
+                out.println((char) 27 + "[31mВы ввели отрицательное число, для него вычислить факториал невозможно, попробуйте еще раз." + (char) 27 + "[0m");
+            else
+            {
+                long result = 1;
 
-        out.println((char) 27 + "[31mМы работаем над задачей в поте лица" + (char)27 + "[0m");
+                if (n == 0 || n == 1)
+                    out.println(n+"!  = "+result);
 
+                for (int i = 2; i <= n; i++)
+                {
+                    result = result * i;
+                    if (i >= n)
+                    {
+                        out.println(n+"!  = "+result);
+                    }
+                }
+            }
+        } while (n < 0);
     }
-
-
-/*
-    // Простой пример рекурсии
-    class Factorial{
-        // Рекурсивный метод
-        int fact (int n){
-            int result;
-
-            if (n == 1) return 1;
-            result = fact (n - 1) * n;
-            return result;
-        }
-    }
-*/
-    //class Recursion {
-    //   public static void main(String[] args) {
-    /*        Factorial f = new Factorial();
-
-            out.println("Факториал 3 равен " + f.fact(3));
-            out.println("Факториал 4 равен " + f.fact(4));
-            out.println("Факториал 5 равен " + f.fact(5));
-        }
-    }
-
-
-      if (n == 1) return 1;
-        result = fact n * (n - 1);
-        return result;
-
-    */
-
-
-
-
-
-
-
 }
