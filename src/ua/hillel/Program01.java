@@ -1,11 +1,12 @@
 package ua.hillel;
 
+import ua.hillel.UiUtils.UiConstants;
+
 import static java.lang.System.out;
 
 public class Program01 {
 
     public static void Say(){
-
-        out.println((char) 27 + "[31mМы работаем над задачей в поте лица" + (char)27 + "[0m");
+        out.println(UiConstants.METHOD_NOT_IMPLEMENTED);
     }
 }

@@ -7,12 +7,10 @@ import static java.lang.System.out;
 public class Program06 {
 
     public static void Factorial(){
-
         out.println((char) 27 + "[31mМы работаем над задачей в поте лица" + (char)27 + "[0m");
-
+        // FIXME: 2/8/18 use the Constants as I provided in other classes.
     }
-
-
+        // FIXME: 2/8/18 Comments shouldn't be here.
 /*
     // Простой пример рекурсии
     class Factorial{
@@ -42,11 +40,4 @@ public class Program06 {
         return result;
 
     */
-
-
-
-
-
-
-
 }
