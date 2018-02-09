@@ -1,40 +1,42 @@
 package ua.hillel;
 
+import ua.hillel.UiUtils.ProgramNameConstants;
+import ua.hillel.UiUtils.UiConstants;
+import ua.hillel.UiUtils.UserEnterConstants;
 import static java.lang.System.out;
-
 import java.util.Scanner;
 
 public class Program04 {
 
-    public static void Fibonacci(){
-
-        out.println((char) 27 + "[34m              Fibonacci" + (char)27 + "[0m");
-        out.println((char) 27 + "[32m          Введите целое число: " + (char)27 + "[0m");
+    public static void fibonacci(){
+        out.println(UiConstants.UI_DIVIDER_BLUE);
+        out.println(ProgramNameConstants.PROGRAM4_NAME);
+        out.println(UiConstants.UI_EMPTY_SPACE);
+        out.println(UserEnterConstants.ENTER_INTEGER);
 
         int a = 0;
         int b = 1;
         int n = 0;
-        int sum_fib;
+        int sumFib;
 
         Scanner s = new Scanner(System.in);
 
-            // Проверка на ввод целого числа
+// Check for an integer
             if (s.hasNextInt()){
                 n = s.nextInt();
             } else {
-                out.println((char) 27 + "[31m                WARNING!" + (char)27 + "[0m");
-                out.println((char) 27 + "[31m-----------------------------------------" + (char)27 + "[0m");
-                out.println((char) 27 + "[31m          Введите целое число!!!" + (char)27 + "[0m");
-                out.println((char) 27 + "[31m-----------------------------------------" + (char)27 + "[0m");
-                out.println("");
-                Fibonacci();
+                out.println(UiConstants.UI_WARNING_MESSAGE);
+                out.println(UiConstants.UI_DEVIDER_RED);
+                out.println(UiConstants.UI_INTEGER_MESSAGE);
+                out.println(UiConstants.UI_DEVIDER_RED);
+                fibonacci();
             }
-        // Реализация задачи
+// Implementation of the task
         for(int i = 0; i < n; i++){
-            sum_fib = a + b;
+            sumFib = a + b;
             a = b;
-            b = sum_fib;
-            out.print(sum_fib + " ");
+            b = sumFib;
+            out.print(sumFib + " ");
         }
     }
 }

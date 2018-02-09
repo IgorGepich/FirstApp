@@ -7,7 +7,7 @@ import static java.lang.System.out;
 public class ChooseProgram {
     // FIXME: 1/24/18 need to rename class to more readable and intuitive name, According to responsibility of this class.
 
-    public static void Choose(){
+    public static void choose(){
         out.println(UiConstants.UI_DIVIDER_BLUE);
 
         out.println(UiConstants.UI_CHOOSE_PROGRAM_BLUE);

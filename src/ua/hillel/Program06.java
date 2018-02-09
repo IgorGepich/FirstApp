@@ -1,19 +1,28 @@
 package ua.hillel;
 
+import ua.hillel.UiUtils.ProgramNameConstants;
+import ua.hillel.UiUtils.ProgramResultConstants;
+import ua.hillel.UiUtils.UiConstants;
+import ua.hillel.UiUtils.UserEnterConstants;
+
 import static java.lang.System.out;
 import java.util.Scanner;
 
 public class Program06 {
 
-    public static void Factorial() {
+    public static void factorial() {
         long n;
         do
         {
+            out.println(UiConstants.UI_DIVIDER_BLUE);
+            out.println(ProgramNameConstants.PROGRAM6_NAME);
+            out.println(UiConstants.UI_EMPTY_SPACE);
+            out.println(UserEnterConstants.ENTER_INTEGER_RANGE_OF);
+
             Scanner scan = new Scanner(System.in);
-            out.println((char) 27 + "[34mВведите натуральноe число для вычисления факториала в диапазоне от 1 до 65: " + (char)27 + "[0m");
             n = scan.nextInt();
             if(n < 0)
-                out.println((char) 27 + "[31mВы ввели отрицательное число, для него вычислить факториал невозможно, попробуйте еще раз." + (char) 27 + "[0m");
+                out.println(UiConstants.UI_NEGATIVE_NUMBER_WARNING);
             else
             {
                 long result = 1;
@@ -26,10 +35,12 @@ public class Program06 {
                     result = result * i;
                     if (i >= n)
                     {
-                        out.println(n+"!  = "+result);
+                        out.println(ProgramResultConstants.YOUR_ENTER_NUMBER + n);
+                        out.println(ProgramResultConstants.PROGRAM6_RESULT + result);
                     }
                 }
             }
-        } while (n < 0);
+        }
+        while (n < 0);
     }
 }

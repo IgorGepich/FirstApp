@@ -1,31 +1,39 @@
 package ua.hillel;
 
 import java.util.Random;
-
 import static java.lang.System.out;
+import ua.hillel.UiUtils.ProgramNameConstants;
+import ua.hillel.UiUtils.ProgramResultConstants;
+import ua.hillel.UiUtils.UiConstants;
 
 public class Program02 {
 
-    public static void Say(){
-
-        out.println((char) 27 + "[34mПрограмма создает массив размером n и заполняет его рандомными числами в диапазоне от 0 до 99" + (char)27 + "[0m");
-        int[] firstArray = new int[40];//Создаем массив размером n
+    public static void say(){
+        out.println(UiConstants.UI_DIVIDER_BLUE);
+        out.println(ProgramNameConstants.PROGRAM2_NAME);
+        out.println(UiConstants.UI_EMPTY_SPACE);
+//Create an array of size n
+        int[] firstArray = new int[40];
         Random rand = new Random();
 
         for (int i = 0; i < firstArray.length; i++)
-            firstArray[i] = rand.nextInt(100); // Заполняем массив случайными числами диапазона [0...99]
+//Fill the array with random numbers of the range [0 ... 99]
+            firstArray[i] = rand.nextInt(100);
         for (int i : firstArray)
-            out.print(i + ", "); // Выводим на экран массив
+//Display the array
+            out.print(i + ", ");
+            out.println(UiConstants.UI_EMPTY_SPACE);
 
-        // Находим наибольший элемент массива
+//Find the largest element of the array
         int maxIndex = 0;
         for (int i = 0; i < firstArray.length; i++) {
             if (firstArray[i] > firstArray[maxIndex]) {
                 maxIndex = i;
             }
         }
-        out.println("\n");
-        out.println((char) 27 + "[32m      Наибольший элемент массива: " + (char)27 + "[0m");
+        out.println(UiConstants.UI_EMPTY_SPACE);
+        out.println(ProgramResultConstants.PROGRAM2_RESULT);
+        out.println(UiConstants.UI_EMPTY_SPACE);
         out.println(firstArray[maxIndex]);
     }
 }
