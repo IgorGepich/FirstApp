@@ -6,6 +6,11 @@ import ua.hillel.UiUtils.ProgramNameConstants;
 import ua.hillel.UiUtils.ProgramResultConstants;
 import ua.hillel.UiUtils.UiConstants;
 
+/*
+    The program creates an array of size n and fills it
+    with random numbers in the range from 0 to 99
+*/
+
 public class Program02 {
 
     public static void say(){

@@ -8,15 +8,16 @@ public class UiConstants {
     public static final String UI_CHOOSE_PROGRAM_NUMBER = (char) 27 + "[34m     Введите номер программы 1-9: " + (char)27 + "[0m";
 
     //programs titles
-    public static final String UI_PROGRAMME_1 = "1. Сумма двух чисел";
-    public static final String UI_PROGRAMME_2 = "2. Наибольшее целое число в списке";
-    public static final String UI_PROGRAMME_3 = "3. Возврат n-го элемента списка";
-    public static final String UI_PROGRAMME_4 = "4. Возрат n-го элемента последовательности Фибоначчи";
-    public static final String UI_PROGRAMME_5 = "5. Палиндром";
-    public static final String UI_PROGRAMME_6 = "6. Вычисление факториала заданного числа";
-    public static final String UI_PROGRAMME_7 = "7. Возврат индекса первого вхождения заданного числа в список";
-    public static final String UI_PROGRAMME_8 = "8. Метод измененния строки";
-    public static final String UI_PROGRAMME_9 = "9. Преобразование градусов Цельсия в Фаренгейт";
+    public static final String UI_PROGRAM_01 = "1. Distance to lightning";
+    public static final String UI_PROGRAM_02 = "2. Наибольшее целое число в списке";
+    public static final String UI_PROGRAM_03 = "3. Возврат n-го элемента списка";
+    public static final String UI_PROGRAM_04 = "4. Возрат n-го элемента последовательности Фибоначчи";
+    public static final String UI_PROGRAM_05 = "5. Палиндром";
+    public static final String UI_PROGRAM_06 = "6. Вычисление факториала заданного числа";
+    public static final String UI_PROGRAM_07 = "7. Возврат индекса первого вхождения заданного числа в список";
+    public static final String UI_PROGRAM_08 = "8. Метод измененния строки";
+    public static final String UI_PROGRAM_09 = "9. Преобразование градусов Цельсия в Фаренгейт";
+    public static final String UI_PROGPAM_10 = "10. Test";
 
     //navigation titles
     public static final String UI_PRESS_TEXT = (char) 27 + "[34m------------------PRESS------------------" + (char)27 + "[0m";

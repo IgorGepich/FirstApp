@@ -90,7 +90,7 @@ class ScannerSecondChoose {
 
         switch (secondChoose) {
             case 1:
-                ChooseProgram.choose();
+                ChooseProgram.chooseTheProgram();
                 ScannerIn.enterNumberOfTheProgram();
                 break;
             case 2:
